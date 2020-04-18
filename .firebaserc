@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngfirebaseproy-5efbe": {
+      "hosting": {
+        "FirebaseCRUD": [
+          "ngfirebaseproy-5efbe"
+        ]
+      }
+    }
+  }
+}
