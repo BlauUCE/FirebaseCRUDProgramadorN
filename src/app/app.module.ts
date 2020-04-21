@@ -13,11 +13,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //angular material
 import {MatCardModule} from '@angular/material/card';
+import { ListaComponent } from './components/lista/lista.component';
+import { AgregarComponent } from './components/agregar/agregar.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaComponent,
+    AgregarComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +36,11 @@ import {MatCardModule} from '@angular/material/card';
     AngularFirestoreModule,
     BrowserAnimationsModule,
 
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

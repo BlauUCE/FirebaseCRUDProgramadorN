@@ -1,0 +1,32 @@
+<!-- <ul>
+  <li class="text" *ngFor="let item of items">
+    {{item.name}}
+  </li>
+</ul>
+ -->
+<div class="alert alert-success" role="alert">
+    Datos de la base
+</div>
+
+<table class="table table-hover">
+    <thead class="table-dark">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Nombre
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let it of items">
+        <th>
+            {{it.id}}
+        </th>
+        <th>
+            {{it.name}}
+        </th>
+    </tr>
+    </tbody>
+</table>

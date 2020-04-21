@@ -1,0 +1,16 @@
+<div class="form-group">
+  <!-- <label for="nam">Nombre</label>
+  <input type="text" class="form-control" name="nam" id="id" aria-describedby="helpId" placeholder="ejemplo">
+  <small id="helpId" class="form-text text-muted">Item</small> -->
+    <hr>
+    <p>Agregar</p>
+    <form (ngSubmit) = "addItem()">
+        <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="ejemplo nombre" [(ngModel)]="item.name" name="nombre">
+        </mat-form-field>
+        &nbsp;
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    <hr>
+</div>
